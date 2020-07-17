@@ -1,0 +1,7 @@
+<h1>Show list of menu options</h1>
+
+<ul> 
+<% @dishes.each do |dish| %>
+  <li> <%= link_to dish.name, dish %> </li>
+<% end %>
+</ul>

@@ -1,0 +1,6 @@
+<h1><%=@dish.name%></h1>
+
+
+<%= render 'form' %>
+
+<%= button_to "Delete", menu_path(@dish), method: :delete, data: {confirm: "You're being wasteful..."} %>
